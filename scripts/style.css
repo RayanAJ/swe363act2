@@ -1,0 +1,69 @@
+body {
+	background-color: white;
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	text-alignment: center;
+}
+
+
+
+a.firstSentance {
+	font: 24px arial, sans-serif;
+}
+
+#topLeftAside {
+	float: left;
+}
+
+#topRightAside {
+	float: right;
+}
+
+header {
+	text-align: center;
+}
+
+#topBody {
+	height: 85px;
+	width: 550px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topFooter {
+	width: 1073px;
+	padding: 3px;
+	border: 1px solid black;
+	background-color: #a2ffa2;
+	border-radius: 5px;
+}
+#addMore{
+	float: left;
+	position: relative;
+	left: 230px;
+	top: 50px;
+}
+
+#calc {
+	hight: 200px;
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+	text-alignment: center;
+}
+.pass {
+	background-color: #ccffce;
+	font-weight: bold;
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fail {
+	background-color: #fdcbcb;
+	font-style: italic;
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
+}

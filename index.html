@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SWE Program Chart</title>
+<!-- <meta> tags provide search enginers with information used to catalog a site -->
+<meta name="keywords"
+	content="Homework calculator">
+<meta name="description"
+	content="This webpage provides small web application that calculate the total grade in homeworks">
+<link rel="stylesheet" type="text/css" href="scripts/style.css" />
+<script src="scripts/functions.js">
+	
+</script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+
+		$("#more").click(function() {
+			$("#calcForm").append("HW: <input name='grade' type='text'> / <input name='fullGrade' type='text'> <br>");
+		});
+	});
+</script>
+</head>
+<body>
+	<header>
+		<!-- The header is divided to three division: topLeftAside, topRightAside, Center, and footer -->
+		<div id="topLeftAside">
+			<img src="images/KFUPMLogo.png" alt="KFUPM Logo" width="90"
+				height="85">
+		</div>
+		<div id="topRightAside">
+			<img src="images/ICSLogo.png" alt="ICS Logo" width="60" height="83">
+		</div>
+		<div id="topBody">
+			<table>
+				<tr>
+					<td>King Fahd University of Petroleum & Minerals</td>
+					<td>جـامـعـة المـلك فـهـد للـبـتـرول والمـعـادن</td>
+				</tr>
+				<tr>
+					<td>College of Computer Sciences & Engineering</td>
+					<td>كـلـيـة عـلـوم وهنـدسـة الحــاسـب الآلي</td>
+				</tr>
+				<tr>
+					<td>Information & Computer Science Department</td>
+					<td>قـسـم عـلـم الحـاسـب الآلي والمـعلـومـات</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="topFooter">
+			<a class="firstSentance">Activity #2</a>
+		</div>
+	</header>
+	<section>
+		<div id="addMore">
+			<button id="more">Add more HW</button>
+		</div>
+		<div id="calc">
+
+			<h1>Grade Calculator</h1>
+			<form id="calcForm">
+				HW: <input name="grade1" type="text"> / <input
+					name="fullGrade1" type="text">
+				<br>
+
+			</form>
+			<form>
+				<input type="checkbox" name="curve" value="true" id="checked">
+				Curve +5 ? <br> <input type="button" onclick="validate()"
+					value="Compute!">
+
+				<button onclick="clear()">Clear</button>
+			</form>
+		</div>
+
+	</section>
+
+</body>
