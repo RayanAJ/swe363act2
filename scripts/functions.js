@@ -26,11 +26,7 @@ function validate()
 	        if((v1 == "") || (v2 == ""))  throw "Cannot accept empty field";
 	        if( (isNaN(v1) ) || ( isNaN(v2) ) ) throw "input should be a number";
 	        if((v1 < 0) || (v2 < 0))   throw "grades cannot be negative number";
-//	    	v1 = Number(v1);
-//	    	v2 = Number(v2);
-//	        v1 = x.elements[i].value
-//			v2 = x.elements[i+1].value;
-//	        if(v1 > v2)    throw "Gained grade cannot be higher from full mark";
+
 	        
 	    }
 	    catch(err) {
