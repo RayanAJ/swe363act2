@@ -25,8 +25,10 @@ function validate()
 	    try { 
 	        if((v1 == "") || (v2 == ""))  throw "Cannot accept empty field";
 	        if( (isNaN(v1) ) || ( isNaN(v2) ) ) throw "input should be a number";
+	        v1 = parseFloat(v1);
+	        v2 = parseFloat(v2);
 	        if((v1 < 0) || (v2 < 0))   throw "grades cannot be negative number";
-
+	        if(v2 < v1)   			 throw "Gained grade cannot be higher from full mark";
 	        
 	    }
 	    catch(err) {
